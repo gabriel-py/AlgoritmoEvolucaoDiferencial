@@ -22,8 +22,8 @@ def inicializa_populacao(populacao,tam_pop):
     return populacao
 
 populacao = inicializa_populacao(populacao,tam_pop)
-print(populacao)
-print("======")
+#print(populacao)
+#print("======")
 
 
 def cria_nova_geracao(populacao, tam_pop):
@@ -59,8 +59,8 @@ def cria_nova_geracao(populacao, tam_pop):
 
 for i in range(geracoes):
     populacao = cria_nova_geracao(populacao, tam_pop)
-    print(populacao)
-    print("======")
+    #print(populacao)
+    #print("======")
     
 
 if(populacao[0,1]<0):
@@ -68,11 +68,8 @@ if(populacao[0,1]<0):
 else:
     menor_fitness=populacao[0,1]
 
-print(menor_fitness)
 for i in range(tam_pop):
     if(populacao[i,1]<menor_fitness):
         menor_fitness = populacao[i,1]
         
 print(menor_fitness)
-    
-    
