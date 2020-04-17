@@ -15,7 +15,7 @@ def inicializa_populacao(populacao,tam_pop):
     for i in range(tam_pop):
         for j in range(2):
             if(j==0):
-                populacao[i,j] = round(random.uniform(0, 1),2)
+                populacao[i,j] = round(random.uniform(-1000, 1000),2)
             else:
                 populacao[i,j] = round(fit(populacao[i,j-1]),2)
                 
